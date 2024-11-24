@@ -46,7 +46,7 @@ function game() {
   } else if(userNumber == randomNumber) {
     answerArea.textContent = "Correct ⭕❗❕";
     submitButton.disabled = true
-    gameEnd = true;
+    return;
   }
 
   if (chances <= 0) {
