@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numberguessgame</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR:wght@100..900&family=Press+Start+2P&family=Unna:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="wrap">
+
+    <div class="top-section">
+      <div>Between 1 ~ 100</div>
+    </div>
+    <div id="name-section">
+      <p id="game-name">Number Guess Game!</p>
+    </div>
+    
+    <div id="middle-section">
+      <div class="line">?</div>
+      <div class="line">🤣</div>
+      <div class="line">🤩</div>
+      <div class="line">😛</div>
+      <div class="line">?</div>
+    </div>
+
+    <div id="game-section">
+      <div class="game-section-top">
+        <div id="game-section-top-left">
+          <div id="number-input-text">input :</div>
+          <input type="number" id="user-number">
+        </div>
+        <div id="answer-area">Random numbers were generated</div>
+      </div>
+
+      <div class="game-section-bottom">
+        <div id="button-section">
+          <button id="submit-button">Submit!</button>
+          <button id="reset-button">Reset</button>
+        </div>
+        <div>
+          <div id="user-chance">🚩 chances : 7</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

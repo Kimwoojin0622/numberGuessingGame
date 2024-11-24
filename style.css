@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Press Start 2P", system-ui;
+}
+
+body {
+  background-color: rgb(17, 17, 17);
+}
+
+.top-section {
+  height: 10vh;
+  font-size: 2vw;
+  display: flex;
+  line-height: 10vh;
+
+  justify-content: flex-end;
+  margin: 50px 30px;
+}
+
+.top-section div {
+  /* border-style: solid;
+  border-width: 2px;
+  border-color: white; */
+  width: 40vw;
+  text-align: center;
+}
+
+#name-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+#name-section p {
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  width: fit-content;
+  padding: 2rem 3rem;
+  font-size: 3.5vw;
+}
+
+#middle-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
+}
+
+#middle-section .line{
+  font-size: 3.5vw;
+}
+
+#game-section {
+  margin-bottom: 3vh;
+}
+
+#game-section .game-section-top {
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: white; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.7vw;
+}
+
+.game-section-top{
+  height: 10vh;
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 8vh;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#game-section-top-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#game-section-top-left div {
+  margin-right: 1vw;
+}
+
+#number-input-text{
+  white-space: nowrap;
+  font-size: 2vw;
+}
+
+#game-section .game-section-top #user-number {
+  color: black;
+  width: 10vw;
+  height: 7vh;
+  font-size: 2.4vw;
+  padding: 2px;
+  border-radius: 10px;
+  border: solid 5px gray;
+  margin-right: 3vw;
+}
+
+
+#game-section .game-section-top #answer-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.game-section-bottom {
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+
+.game-section-bottom #button-section {
+  /* border: solid 1px white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.game-section-bottom button {
+  color: black;
+  padding: 2rem;
+  font-size: 1.5vw;
+  border: none;
+  background-color: beige;
+  cursor: pointer;
+  transition: background-color 0.02s transform 0.2s;
+}
+
+.game-section-bottom button:active {
+  background-color: rgb(160, 160, 126);
+  transform: scale(0.95);
+}
+
+.game-section-bottom button:disabled {
+  background-color: rgba(184, 175, 175, 0.7);
+  color: rgb(119, 80, 80);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.game-section-bottom #user-chance {
+  font-size: 1.5vw;
+}
+
+
+@media (min-width:481px) and (max-width: 576px){
+  #name-section {
+    height: 15vh;
+  }
+  
+  #name-section p {
+    width: fit-content;
+    padding: 1rem 2rem;
+    font-size: 2.5vw;
+  }
+
+  #middle-section {
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 6vh;
+  }
+  
+  #middle-section .line{
+    font-size: 3vw;
+  }
+
+  #game-section .game-section-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.45vw;
+    font-size: 1.84vw;
+    margin-bottom: 7vh;
+    font-size: 3vw;
+    height: 10vh;
+    width: 100vw;
+  }
+  
+
+  #game-section .game-section-top #user-number {
+    color: black;
+    width: 15vw;
+    height: 6vh;
+    font-size: 3.1vw;
+    border-radius: 10px;
+    border: solid 3px gray;
+  }
+
+  #number-input-text{
+    font-size: 3vw;
+  }
+
+  #game-section .game-section-top #answer-area {
+    margin-top: 3vh;
+  }
+
+  .game-section-bottom {
+    gap: 2rem;
+  }
+
+  .game-section-bottom #button-section {
+    gap: 2.5rem;
+  }
+
+  .game-section-bottom button {
+    padding: 1rem;
+    font-size: 1.4vw;
+  }
+
+  .game-section-bottom #user-chance {
+    font-size: 1.7vw;
+  }
+}
+  
+
+  
+/* -------------------------------------------- */
+/* 모바일 용 */
+@media (max-width: 480px){
+  .top-section {
+    height: 3vh;
+    font-size: 2.5vw;
+  }
+
+  #name-section {
+    height: 12vh;
+    margin-bottom: 5vh;
+  }
+  
+  #name-section p {
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    font-size: 2.2vw;
+  }
+
+  #middle-section {
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 8vh;
+  }
+  
+  #middle-section .line{
+    font-size: 5vw;
+  }
+
+  #game-section .game-section-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.84vw;
+    margin-bottom: 7vh;
+    font-size: 3vw;
+    height: 10vh;
+    width: 100vw;
+  }
+
+  #number-input-text{
+    font-size: 3vw;
+  }
+
+  #game-section .game-section-top #user-number {
+    width: 10vw;
+    height: 3.5vh;
+    font-size: 3.1vw;
+    border-width: 2.5px;
+  }
+
+  #game-section .game-section-top #answer-area {
+    margin-top: 5vh;
+  }
+
+  .game-section-bottom {
+    gap: 0.2rem;
+  }
+  
+  .game-section-bottom #user-chance {
+    font-size: 2.8vw;
+    white-space: nowrap;
+  }
+  
+  .game-section-bottom #button-section {
+    gap: 1rem;
+  }
+  
+  .game-section-bottom button {
+    padding: 1rem;
+    font-size: 2vw;
+    white-space: nowrap;
+  }
+}
